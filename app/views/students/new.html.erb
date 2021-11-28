@@ -1,0 +1,16 @@
+<h1>GeekKobe</h1>
+<h3>新規Tweet</h3>
+<%= form_for @student do |f| %>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name, :size => 140 %>
+    <%= f.label :profile %>
+    <%= f.text_field :profile, :size => 140 %>
+    <%= f.label :mentor %>
+    <%= f.text_field :mentor, :size => 140 %>
+    <%= f.label :grade %>
+    <%= f.text_field :grade, :size => 140 %>
+  </div>
+  <%= f.submit "Tweetする" %>
+<% end %>
+<%= link_to "Tweet一覧に戻る", students_path %>
