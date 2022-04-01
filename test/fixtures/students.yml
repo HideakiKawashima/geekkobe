@@ -4,10 +4,10 @@ one:
   name: MyString
   profile: MyString
   mentor: MyString
-  grade: MyString
+  grade: 1
 
 two:
   name: MyString
   profile: MyString
   mentor: MyString
-  grade: MyString
+  grade: 1

@@ -12,9 +12,9 @@ class StudentsController < ApplicationController
 
   def create
     student = Student.new(student_params)
-     #追加箇所
-     student.user_id = current_user.id
-     #ここまで
+    #追加箇所
+    student.user_id = current_user.id
+    #ここまで
     if student.save
       redirect_to :action => "index"
     else

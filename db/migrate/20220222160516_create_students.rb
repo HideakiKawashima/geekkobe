@@ -1,10 +1,10 @@
-class CreateKobes < ActiveRecord::Migration[6.1]
+class CreateStudents < ActiveRecord::Migration[6.1]
   def change
-    create_table :kobes do |t|
+    create_table :students do |t|
       t.string :name
       t.string :profile
       t.string :mentor
-      t.string :grade
+      t.integer :grade
 
       t.timestamps
     end
